@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assesment 1 | CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main{
+            width: 100%;
+            background-color: lightblue;
+            padding: 20px;
+        }
+        header{
+            width: 100%;
+            font-weight: 100;
+            font-size: 20px;
+            padding: 20px 0;
+        }
+        .address{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px;
+        }
+        .map{
+          padding-right: 40px;
+          font-size: 35px;
+          color: red;
+        }
+        .phone{
+            padding: 10px;
+            font-size: 14px;
+            line-height: 25px;
+        }
+        .addr{
+            padding: 10px;
+            font-size: 14px;
+            line-height: 25px;
+
+        }
+        .phone span{
+            color: red;
+        }
+        .phone p{
+            color: skyblue;
+        }
+        #ph{
+            color: red;
+        }
+        .box2{
+            margin: 0 auto;
+            padding-top: 2%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box2 .left{
+            width: 48%
+        }
+        .box2 .left .inp{
+            margin: 10px 0px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .box2 .left .inp .inp-lf{
+            width: 48%;
+        }
+        .box2 .left .inp .inp-lf input{
+            width: 100%;
+            padding: 5px;
+        }
+       .box2 .left .inp .inp-rt input{
+            width: 100%;
+            padding: 5px;
+        }
+        .box2 .left .inp .inp-rt{
+            width: 48%;
+        }
+        .box2 .left .last{
+            width: 100%;
+        }
+        .box2 .left .last textarea{
+            width: 100%;
+        }
+        .button{
+            width: 100%;
+            padding: 5px;
+        }
+        .button input{
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+            color: white;
+            background-color: red;
+        }
+        .location{
+            width: 48%;
+        }
+        .location iframe{
+            width: 100%;
+            height: inherit;
+        }
+        .icon{
+            padding: 20px;
+        }
+        #fb,#twitter,#in,#headphones{
+            padding: 5px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            margin: 2px;
+        }
+        @media screen and (max-width:960px) {
+            .main .left .inp{
+                flex-direction: column;
+            }
+            .main .left .inp .inp-lf{
+                width: 100%;
+                margin: 15px 0px;
+            }
+            .main .left .inp .inp-rt{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1>CONTACT US </h1>
+        </header>
+        <div class="address">
+            <div class="addr">
+                <h2>ADDRESS</h2>
+                <P>Rang avdhoot nagar society<br> 
+                Jambusar,392150</P>
+            </div>
+            <div class="phone">
+                <p><i class="fa-solid fa-phone" id="ph"></i>
+                <span>+91 1234567890</span><br>
+                <i class="fa-solid fa-envelope"></i>
+                Example@gmail.com
+                </p>
+            </div>
+            <div class="map">
+            <i class="fa-solid fa-location-dot"></i>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="left">
+                <div class="inp">
+                    <div class="inp-lf">
+                        <input type="text" name="Name:" value="Name">
+                    </div>
+                    <div class="inp-rt">
+                        <input type="text" name="Email:" value="Email">
+                    </div>
+                </div>
+                <div class="inp">
+                    <div class="inp-lf">
+                        <input type="tel" name="Mobile:" value="Mobile">
+                    </div>
+                    <div class="inp-rt">
+                        <input type="text" name="Company" value="Company">
+                    </div>
+                </div>
+    
+                <div class="last">
+                    <textarea name="Message" id="" cols="30" rows="4">Message</textarea>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Send" name="Send">
+                </div>
+            </div>  
+            <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59166.6302172883!2d72.72896291485864!3d22.05287015956869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395f9f4796418351%3A0x39c4d5856ee896af!2sJambusar%2C%20Gujarat%20392150!5e0!3m2!1sen!2sin!4v1709041684846!5m2!1sen!2sin" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="icon">
+                <i class="fa-brands fa-facebook" id="fb"></i>
+                <i class="fa-brands fa-twitter" id="twitter"></i>
+                <i class="fa-brands fa-linkedin" id="in"></i>
+                <i class="fa-solid fa-headphones" id="headphones"></i>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
